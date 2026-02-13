@@ -1,0 +1,256 @@
+/* General styling for the cart page */
+.Cart_content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Arial, sans-serif;
+    color: #333;
+}
+  
+/* Cart title styling */
+.cart_title {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+}
+  
+.cart_title h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+  
+.cart_title h2::before {
+    content: "YOUR";
+    color: #888;
+    margin-right: 8px;
+    font-weight: 300;
+}
+  
+.cart_title h2::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 50px;
+    background-color: #333;
+    margin-left: 15px;
+}
+  
+/* Product list styling */
+.q1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+  
+.your_cart {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+  
+.your_product_img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+  
+.your_product_name_ {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+}
+  
+.your_product_info {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+  
+.your_product_info p {
+    margin-right: 15px;
+}
+  
+.your_product_size {
+    background-color: #f7f7f7;
+    padding: 3px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+  
+.your_product_quantity {
+    width: 60px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+  
+.your_product_quantity:focus {
+    outline: none;
+    border-color: #888;
+}
+  
+.delete_your_product {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+  
+.delete_your_product:hover {
+    opacity: 1;
+}
+
+  /* Cart total section styling */
+.carttotal_section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+  /* Checkout button styling */
+.checkout_button {
+    margin-top: 20px;
+}
+  
+.checkout_button_color {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.checkout_button_color:hover {
+    background-color: #333;
+}
+  
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .q1 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .your_product_quantity {
+      margin: 15px 0;
+    }
+  
+    .delete_your_product {
+      align-self: flex-end;
+      margin-top: -40px;
+    }
+  
+    .carttotal_section {
+      max-width: 100%;
+    }
+}
+
+.discount-section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.discount-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.discount-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.discount-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.discount-input button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.discount-input button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.discount-info {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-radius: 4px;
+}
+
+.discount-info p {
+  margin: 5px 0;
+  color: #2e7d32;
+  font-size: 14px;
+}
+
+.total-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.subtotal,
+.discount-amount,
+.final-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.discount-amount {
+  color: #2e7d32;
+}
+
+.final-total {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #ddd;
+  font-weight: bold;
+  font-size: 18px;
+}

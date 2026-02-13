@@ -1,0 +1,126 @@
+/* Overall container padding */
+.about_title {
+    text-align: center;
+    font-size: 28px;
+    color: #222;
+    margin-top: 40px;
+    font-weight: 600;
+  }
+  
+  .about_title h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #1d1d1f;
+    display: inline-block;
+    padding-bottom: 4px;
+  }
+  
+  /* Flex layout for image + text */
+  .About_content {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .about_img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex: 1;
+  }
+  
+  .ss {
+    flex: 2;
+  }
+  
+  .ss p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  
+  .ourmission {
+    display: block;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #222;
+  }
+  
+  /* Why Choose Us section */
+  .why_us {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .why_us h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1d1d1f;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .why_us h2::after {
+    content: '';
+    display: block;
+    margin: 8px auto 0;
+    width: 50px;
+    height: 2px;
+    background: #1d1d1f;
+  }
+  
+  /* 3 column grid */
+  .reasons {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .reasons div {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    text-align: left;
+  }
+  
+  .reasons b {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+  }
+  
+  .reasons p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .About_content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about_img {
+      max-width: 100%;
+    }
+  
+    .ss {
+      text-align: left;
+    }
+  }
+  

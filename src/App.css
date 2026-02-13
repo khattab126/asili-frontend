@@ -1,0 +1,46 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p,
+span,
+div,
+input,
+select,
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 640px) {
+  .App {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .App {
+    padding-left: 9vw;
+    padding-right: 9vw;
+  }
+}

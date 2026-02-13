@@ -1,0 +1,37 @@
+.rating-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.star {
+  color: #ddd;
+  transition: color 0.2s ease-in-out;
+}
+
+.star.filled {
+  color: #ffd700;
+}
+
+.star.interactive {
+  cursor: pointer;
+}
+
+.star.interactive:hover {
+  color: #ffd700;
+}
+
+/* Size variants */
+.rating-container.small .star {
+  font-size: 14px;
+  margin-right: 2px;
+}
+
+.rating-container.medium .star {
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+.rating-container.large .star {
+  font-size: 24px;
+  margin-right: 4px;
+} 

@@ -1,0 +1,281 @@
+.collection-page {
+  padding: 60px 20px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collection-main-container {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Filter Container Styles */
+.collection-filter-container {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.collection-filter-options {
+  position: sticky;
+  top: 2rem;
+}
+
+.mobile-filter-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+}
+
+.desktop-filter-title {
+  display: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.filter-arrow {
+  transition: transform 0.2s ease;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+.mobile-show {
+  display: block;
+}
+
+/* Category Box Styles */
+.collection-category-box {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.collection-category-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.collection-category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.collection-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.collection-checkbox-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.collection-checkbox-row label {
+  font-size: 0.95rem;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.collection-checkbox-row:hover label {
+  color: #111;
+}
+
+/* Products Section */
+.right-side-products {
+  flex: 1;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-container h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.sort-select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #4b5563;
+  background-color: white;
+  cursor: pointer;
+}
+
+.sort-select:hover {
+  border-color: #9ca3af;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.4;
+}
+
+.product-card span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+/* No Products Message */
+.no-products {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+}
+
+.no-products p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .collection-main-container {
+    gap: 1.5rem;
+  }
+
+  .collection-filter-container {
+    width: 240px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .product-card img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .collection-main-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .collection-filter-container {
+    width: 100%;
+  }
+
+  .desktop-filter-title {
+    display: block;
+  }
+
+  .mobile-filter-toggle {
+    display: none;
+  }
+
+  .mobile-hide,
+  .mobile-show {
+    display: block !important;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+
+  .product-card img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collection-page {
+    padding: 0.5rem;
+  }
+
+  .collection-main-container {
+    padding: 0.5rem;
+  }
+
+  .collection-category-box {
+    padding: 1rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .product-card img {
+    height: 180px;
+  }
+
+  .product-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .product-card span {
+    font-size: 0.9rem;
+  }
+
+  .no-products {
+    padding: 2rem 1rem;
+  }
+
+  .no-products p {
+    font-size: 1rem;
+  }
+}

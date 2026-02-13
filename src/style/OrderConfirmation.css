@@ -1,0 +1,136 @@
+.confirmation-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .confirmation-content {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+  }
+  
+  .icon-container svg {
+    color: #000000;
+  }
+  
+  .confirmation-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .confirmation-text {
+    margin-bottom: 30px;
+  }
+  
+  .confirmation-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333333;
+    margin: 5px 0;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+  
+  .newsletter-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .newsletter-form button {
+    padding: 12px 24px;
+    background: linear-gradient(to right, #e6b980, #80cbc4);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  
+  .newsletter-form button:hover {
+    opacity: 0.9;
+  }
+  
+  .social-section {
+    margin-top: 30px;
+  }
+  
+  .social-section p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333333;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    color: #000000;
+    font-size: 24px;
+    transition: color 0.2s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #666666;
+  }
+  
+  .view-orders-button {
+    margin: 20px 0;
+  }
+  
+  .view-orders-button button {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .view-orders-button button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 600px) {
+    .newsletter-form {
+      flex-direction: column;
+    }
+  
+    .newsletter-form button {
+      width: 100%;
+    }
+  
+    .confirmation-content h1 {
+      font-size: 36px;
+    }
+  
+    .confirmation-text p {
+      font-size: 16px;
+    }
+  }
