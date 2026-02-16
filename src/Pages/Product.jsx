@@ -2,10 +2,10 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { ShopContext } from '../context/ShopContext';
 import '../style/Product.css'; // Ensure you have the correct CSS file
-import RelatedProducts from '../components/RelatedProduct/RelatedProduct'; // Ensure you have the correct path to RelatedProducts
-import Rating from '../components/Rating/Rating';
-import Reviews from '../components/Reviews/Reviews';
-import Footer from "../components/Footer/Footer"
+import RelatedProducts from '../ui_components/RelatedProduct/RelatedProduct'; // Ensure you have the correct path to RelatedProducts
+import Rating from '../ui_components/Rating/Rating';
+import Reviews from '../ui_components/Reviews/Reviews';
+import Footer from "../ui_components/Footer/Footer"
 const Product = () => {
   const { productId } = useParams();
   const { products, currency, addToCart, backendUrl, optimizeImage } = useContext(ShopContext);

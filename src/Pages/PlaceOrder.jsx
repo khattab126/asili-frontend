@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "../style/PlaceOrder.css";
-import CartTotal from '../components/CartTotal/CartTotal';
+import CartTotal from '../ui_components/CartTotal/CartTotal';
 import { ShopContext } from "../context/ShopContext";
 import { toast } from "react-toastify";
 import axios from "axios";
