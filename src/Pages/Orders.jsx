@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import "../style/orders.css";
+import "../style/Orders.css";
 import { ShopContext } from "../context/ShopContext";
 import axios from "axios";
 import { toast } from "react-toastify";
